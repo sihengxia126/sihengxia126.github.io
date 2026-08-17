@@ -45,14 +45,10 @@ footer:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:sihengxi@andrew.cmu.edu"
 
-include:
-  - _pages
+include: []
 
 plugins:
   - jekyll-include-cache
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
 defaults:
   - scope:
@@ -89,6 +85,10 @@ compress_html:
     envs: development
 
 exclude:
+  - index.md
+  - 404.md
+  - _pages
+  - assets
   - Gemfile
   - Gemfile.lock
   - node_modules
