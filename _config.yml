@@ -1,0 +1,98 @@
+locale: "en-US"
+title: "Siheng Xia"
+title_separator: "·"
+subtitle: "Robotics · Generative Models · World Models"
+name: "Siheng Xia"
+description: "Academic homepage of Siheng Xia, an undergraduate researcher at Tsinghua University working on embodied AI, robotics, generative models, and world models."
+url: "https://sihengxia126.github.io"
+baseurl: ""
+repository: "sihengxia126/sihengxia126.github.io"
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+minimal_mistakes_skin: "default"
+
+search: true
+search_full_content: true
+breadcrumbs: false
+masthead_title: "Siheng Xia"
+logo: "/assets/images/monogram.svg"
+
+author:
+  name: "Siheng Xia"
+  avatar: "/assets/images/avatar.svg"
+  bio: "Undergraduate researcher exploring embodied intelligence, dexterous manipulation, and structured world models."
+  location: "Beijing · Pittsburgh"
+  links:
+    - label: "Email (CMU)"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:sihengxi@andrew.cmu.edu"
+    - label: "Email (Tsinghua)"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:xiash24@mails.tsinghua.edu.cn"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sihengxia126"
+    - label: "Curriculum Vitae"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/files/academic_cv_siheng_xia.pdf"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sihengxia126"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:sihengxi@andrew.cmu.edu"
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+
+permalink: /:categories/:title/
+timezone: America/New_York
+future: true
+
+atom_feed:
+  hide: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+
